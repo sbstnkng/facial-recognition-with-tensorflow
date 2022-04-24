@@ -1,7 +1,7 @@
 [![Build and Deploy](https://github.com/sbstnkng/facial-recognition-with-tensorflow/actions/workflows/ci-pipeline.yml/badge.svg)](https://github.com/sbstnkng/facial-recognition-with-tensorflow/actions/workflows/ci-pipeline.yml)
 [![CodeQL](https://github.com/sbstnkng/facial-recognition-with-tensorflow/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/sbstnkng/facial-recognition-with-tensorflow/actions/workflows/codeql-analysis.yml)
 
-# Getting Started with Create React App
+# Facial Recognition with Tensorflow
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
