@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.5943d583.js",
-    "static/js/787.6e5a42dc.chunk.js": "/static/js/787.6e5a42dc.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.5943d583.js.map": "/static/js/main.5943d583.js.map",
-    "787.6e5a42dc.chunk.js.map": "/static/js/787.6e5a42dc.chunk.js.map"
+    "main.css": "/facial-recognition-with-tensorflow/static/css/main.073c9b0a.css",
+    "main.js": "/facial-recognition-with-tensorflow/static/js/main.986f5a30.js",
+    "static/js/787.6e5a42dc.chunk.js": "/facial-recognition-with-tensorflow/static/js/787.6e5a42dc.chunk.js",
+    "static/media/logo.svg": "/facial-recognition-with-tensorflow/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/facial-recognition-with-tensorflow/index.html",
+    "main.073c9b0a.css.map": "/facial-recognition-with-tensorflow/static/css/main.073c9b0a.css.map",
+    "main.986f5a30.js.map": "/facial-recognition-with-tensorflow/static/js/main.986f5a30.js.map",
+    "787.6e5a42dc.chunk.js.map": "/facial-recognition-with-tensorflow/static/js/787.6e5a42dc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.5943d583.js"
+    "static/js/main.986f5a30.js"
   ]
 }
