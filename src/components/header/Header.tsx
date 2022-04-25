@@ -17,7 +17,7 @@ interface Props {
 const Header: React.FC<Props> = ({ isPlaying, onButtonClick }) => {
   return (
     <AppBar position="static">
-      <Container>
+      <Container disableGutters={true}>
         <Toolbar>
           <Typography
             variant="h6"
@@ -31,7 +31,7 @@ const Header: React.FC<Props> = ({ isPlaying, onButtonClick }) => {
             variant={isPlaying ? 'contained' : 'outlined'}
             startIcon={isPlaying ? <Stop /> : <PlayArrow />}
             color={isPlaying ? 'secondary' : 'inherit'}
-            sx={{ marginRight: '1rem', width: '6rem' }}
+            sx={{ mr: 2, width: '6rem' }}
             onClick={onButtonClick}
           >
             {isPlaying ? 'Stop' : 'Start'}

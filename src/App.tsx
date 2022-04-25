@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Alert from '@mui/material/Alert';
+import Container from '@mui/material/Container';
 import Header from './components/header';
 
 const App: React.FC = () => {
@@ -6,10 +8,21 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <Header
-        isPlaying={isPlaying}
-        onButtonClick={() => setPlaying(!isPlaying)}
-      />
+      <header>
+        <Header
+          isPlaying={isPlaying}
+          onButtonClick={() => setPlaying(!isPlaying)}
+        />
+      </header>
+      <main>
+        <Container sx={{ mt: 2 }}>
+          {isPlaying && (
+            <Alert severity="warning">
+              Video is currently not supported — Support is coming soon!
+            </Alert>
+          )}
+        </Container>
+      </main>
     </div>
   );
 };
