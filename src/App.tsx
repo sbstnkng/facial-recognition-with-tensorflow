@@ -17,7 +17,9 @@ const App: React.FC = () => {
       </header>
       <main>
         <Container sx={{ mt: 2, display: 'flex', justifyContent: 'center' }}>
-          {isPlaying && <Webcam ref={webcamRef} />}
+          {isPlaying && (
+            <Webcam ref={webcamRef} style={{ maxWidth: '100vw' }} />
+          )}
         </Container>
       </main>
     </div>
