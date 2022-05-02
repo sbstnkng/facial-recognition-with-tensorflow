@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import Alert from '@mui/material/Alert';
+import React, { useState, useRef } from 'react';
 import Container from '@mui/material/Container';
+import Webcam from 'react-webcam';
 import Header from './components/header';
 
 const App: React.FC = () => {
+  const webcamRef = useRef(null);
   const [isPlaying, setPlaying] = useState(false);
 
   return (
@@ -15,12 +16,8 @@ const App: React.FC = () => {
         />
       </header>
       <main>
-        <Container sx={{ mt: 2 }}>
-          {isPlaying && (
-            <Alert severity="warning">
-              Video is currently not supported — Support is coming soon!
-            </Alert>
-          )}
+        <Container sx={{ mt: 2, display: 'flex', justifyContent: 'center' }}>
+          {isPlaying && <Webcam ref={webcamRef} />}
         </Container>
       </main>
     </div>
