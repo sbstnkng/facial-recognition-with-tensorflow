@@ -31,7 +31,6 @@ const Header: React.FC<Props> = ({ isPlaying, onButtonClick }) => {
             variant={isPlaying ? 'contained' : 'outlined'}
             startIcon={isPlaying ? <Stop /> : <PlayArrow />}
             color={isPlaying ? 'secondary' : 'inherit'}
-            sx={{ mr: 2, width: '6rem' }}
             onClick={onButtonClick}
           >
             {isPlaying ? 'Stop' : 'Start'}
