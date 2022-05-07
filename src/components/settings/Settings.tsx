@@ -17,7 +17,7 @@ const Settings: React.FC<Props> = ({ isOpen, onClose }) => {
     <Drawer anchor="bottom" open={isOpen} onClose={onClose}>
       <Container maxWidth="sm" sx={{ py: 3 }}>
         <Typography
-          variant="h4"
+          variant="h5"
           gutterBottom
           component="div"
           sx={{ display: 'flex', alignItems: 'center' }}
