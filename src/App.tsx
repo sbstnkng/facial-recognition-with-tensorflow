@@ -1,19 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './components/header';
 import VideoPanel from './components/video';
 import Settings from './components/settings';
 
 const App: React.FC = () => {
-  const [isSettingsOpen, setSettingsOpen] = useState(false);
-
   return (
     <div className="App">
-      <Header onSettingsClick={() => setSettingsOpen(true)} />
+      <Header />
       <VideoPanel />
-      <Settings
-        isOpen={isSettingsOpen}
-        onClose={() => setSettingsOpen(false)}
-      />
+      <Settings />
     </div>
   );
 };
