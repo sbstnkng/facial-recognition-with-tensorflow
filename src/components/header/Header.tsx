@@ -11,10 +11,15 @@ import Stop from '@mui/icons-material/Stop';
 
 interface Props {
   isPlaying: boolean;
-  onButtonClick: () => void;
+  onStartStopClick: () => void;
+  onSettingsClick: () => void;
 }
 
-const Header: React.FC<Props> = ({ isPlaying, onButtonClick }) => {
+const Header: React.FC<Props> = ({
+  isPlaying,
+  onStartStopClick,
+  onSettingsClick,
+}) => {
   return (
     <AppBar position="static">
       <Container disableGutters={true}>
@@ -31,7 +36,7 @@ const Header: React.FC<Props> = ({ isPlaying, onButtonClick }) => {
             variant={isPlaying ? 'contained' : 'outlined'}
             startIcon={isPlaying ? <Stop /> : <PlayArrow />}
             color={isPlaying ? 'secondary' : 'inherit'}
-            onClick={onButtonClick}
+            onClick={onStartStopClick}
           >
             {isPlaying ? 'Stop' : 'Start'}
           </Button>
@@ -41,6 +46,7 @@ const Header: React.FC<Props> = ({ isPlaying, onButtonClick }) => {
             aria-controls="menu-appbar"
             aria-haspopup="true"
             color="inherit"
+            onClick={onSettingsClick}
           >
             <SettingsIcon />
           </IconButton>
