@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
 import AppThemeProvider from './themes/AppThemeProvider';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -9,9 +11,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <AppThemeProvider>
-      <App />
-    </AppThemeProvider>
+    <Provider store={store}>
+      <AppThemeProvider>
+        <App />
+      </AppThemeProvider>
+    </Provider>
   </React.StrictMode>
 );
 
