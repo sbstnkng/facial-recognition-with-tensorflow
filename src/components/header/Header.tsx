@@ -5,21 +5,13 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import SettingsIcon from '@mui/icons-material/Settings';
-import Button from '@mui/material/Button';
-import PlayArrow from '@mui/icons-material/PlayArrow';
-import Stop from '@mui/icons-material/Stop';
+import StartButton from './StartButton';
 
 interface Props {
-  isPlaying: boolean;
-  onStartStopClick: () => void;
   onSettingsClick: () => void;
 }
 
-const Header: React.FC<Props> = ({
-  isPlaying,
-  onStartStopClick,
-  onSettingsClick,
-}) => {
+const Header: React.FC<Props> = ({ onSettingsClick }) => {
   return (
     <AppBar position="static">
       <Container disableGutters={true}>
@@ -32,14 +24,7 @@ const Header: React.FC<Props> = ({
           >
             Facial Recognition with Tensorflow
           </Typography>
-          <Button
-            variant={isPlaying ? 'contained' : 'outlined'}
-            startIcon={isPlaying ? <Stop /> : <PlayArrow />}
-            color={isPlaying ? 'secondary' : 'inherit'}
-            onClick={onStartStopClick}
-          >
-            {isPlaying ? 'Stop' : 'Start'}
-          </Button>
+          <StartButton />
           <IconButton
             size="large"
             aria-label="settings"
