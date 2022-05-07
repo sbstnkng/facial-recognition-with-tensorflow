@@ -10,7 +10,12 @@ const VideoPanel: React.FC = () => {
 
   return (
     <Container sx={{ mt: 2, display: 'flex', justifyContent: 'center' }}>
-      {isEnabled && <Webcam ref={webcamRef} style={{ maxWidth: '100vw' }} />}
+      {isEnabled && (
+        <Webcam
+          ref={webcamRef}
+          style={{ height: '80vh', maxHeight: '80vh', maxWidth: '100vw' }}
+        />
+      )}
     </Container>
   );
 };
