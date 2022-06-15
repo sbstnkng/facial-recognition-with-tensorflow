@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/facial-recognition-with-tensorflow/static/js/main.baffdc09.js",
+    "main.js": "/facial-recognition-with-tensorflow/static/js/main.ff7734c5.js",
     "static/js/787.6e5a42dc.chunk.js": "/facial-recognition-with-tensorflow/static/js/787.6e5a42dc.chunk.js",
     "index.html": "/facial-recognition-with-tensorflow/index.html",
-    "main.baffdc09.js.map": "/facial-recognition-with-tensorflow/static/js/main.baffdc09.js.map",
+    "main.ff7734c5.js.map": "/facial-recognition-with-tensorflow/static/js/main.ff7734c5.js.map",
     "787.6e5a42dc.chunk.js.map": "/facial-recognition-with-tensorflow/static/js/787.6e5a42dc.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.baffdc09.js"
+    "static/js/main.ff7734c5.js"
   ]
 }
